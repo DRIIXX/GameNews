@@ -15,6 +15,9 @@ body {
     align-items: center;
     padding-left: 10 px;
 }
-.logo{
-    height: 50px;
+.logo {
+    height: 50px;  /* Размер логотипа */
+    position: absolute;
+    top: 5px;
+    left: 10px;
 }

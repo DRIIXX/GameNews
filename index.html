@@ -6,6 +6,7 @@
         <title>GameNews.html</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="images/Logo.png">
+        <link rel="stylesheet" herf="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     </head>
     <body>
         <header>
@@ -28,6 +29,39 @@
                 </div>
             </nav>
         </header>
+        <!-- sectiunea stiri despre jocuri -->
+         <section class="stiri">
+            <h2>📰 Știri despre Jocuri</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="images/Test1.jpg" alt="Stire 1">
+                        <p>Noua actualizare aduce schimberi importante!</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="images/Test1.jpg" alt="Stire 2">
+                        <p>Un bug descoperit in cel mai popular jov multiplayer.</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="images/Test1.jpg" alt="Stire 3">
+                        <p>Top 5 jocuri gratuite pe care trebuie sa le incerci!</p>
+                    </div>
+                </div>
+                <!-- Butoane de navigare -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div><!-- Paginare -->
+            </div>
+        </section>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
         <script src="script.js"></script> <!-- Legăm fișierul JS -->
     </body>
 </html>

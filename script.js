@@ -3,9 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (typeof Swiper !== "undefined") {
         const swiper = new Swiper(".swiper-container", {
-            slidesPerView: 1, 
+            slidesPerView: 3, 
             spaceBetween: 10,
             loop: true,
+            centeredSlides: true,
+            slidesToClickedSlide: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -18,6 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 delay: 3000, 
                 disableOnInteraction: false,
             },
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            on: {
+                slideChange: function () {
+                    console.log("Slide schimbat");
+                }
+            }
         });
     } else {
         console.error("Eroare: Swiper nu este definit. Verifica dacă scriptul Swiper.js este încărcat corect.");

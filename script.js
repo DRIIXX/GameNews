@@ -1,42 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Verificăm dacă Swiper este definit:", typeof Swiper !== "undefined");
 
-    if (typeof Swiper !== "undefined") {
-        const swiper = new Swiper(".swiper-container", {
-            slidesPerView: 3, 
-            spaceBetween: 10,
-            loop: true,
-            centeredSlides: true,
-            slidesToClickedSlide: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+    new Splide("#image-slider", {
+        type: "loop",
+        perPage: 3,
+        perMove: 1,
+        focus: "center",
+        gap: "0px",  // Mai mult spațiu între slide-uri
+        padding: "0px",
+        width: "90%",
+        height: "400px",
+        autoplay: true,
+        interval: 3000,  // Face tranziția mai lentă
+        speed: 1500,  // Animație mai lină
+        easing: "ease-in-out",  // Efect mai natural
+        pauseOnHover: false,
+        arrows: true,
+        pagination: true,
+        breakpoints: {
+            768: {
+                perPage: 1,
+                width: "90%",
+                height: "300px",
             },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000, 
-                disableOnInteraction: false,
-            },
-            effect: 'coverflow',
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-            on: {
-                slideChange: function () {
-                    console.log("Slide schimbat");
-                }
-            }
-        });
-    } else {
-        console.error("Eroare: Swiper nu este definit. Verifica dacă scriptul Swiper.js este încărcat corect.");
-    }
+        }
+    }).mount();
 
     // Selectăm butonul burger și meniul de navigare
     const burger = document.querySelector(".burger");

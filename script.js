@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
         perMove: 1,
         focus: "center",
         gap: "0px",  // Mai mult spațiu între slide-uri
-        padding: "0px",
+        padding: '5rem',
         width: "90%",
         height: "400px",
         autoplay: true,
         interval: 3000,  // Face tranziția mai lentă
-        speed: 1500,  // Animație mai lină
-        easing: "ease-in-out",  // Efect mai natural
+        speed: 600,  // Animație mai lină
+        easing: 'ease',  // Efect mai natural
         pauseOnHover: false,
         arrows: true,
         pagination: true,

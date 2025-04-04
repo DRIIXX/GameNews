@@ -70,12 +70,22 @@ body {
 }
 
 /* ------ SECTIUNEA STIRI ------ */
+
+.stiri{
+    margin: 70px 20px 0px 20px;
+    text-align: left;
+    list-style-type: none;
+    color: #e2c036;
+    font-size: 24px;
+}
+
 /* ✅ Stiluri pentru slider */
 .slider-section {
     width: 100%;
     max-width: 1400px;
     height: 250px auto;
     margin: 70px auto;
+    margin-top: 10px;
     margin-bottom: 0px;
     overflow: hidden;
 }
@@ -93,7 +103,7 @@ body {
 }
 
 /* buttonul pentru a vedea stirile */
-.stiri {
+.stiri-link {
     text-align: center;
     color: white;
     margin-top: 10px;
@@ -153,7 +163,7 @@ body {
         width: 100%;
         max-width: 100%;  /* ✅ Se va întinde cât e nevoie */
         height: auto;  /* ✅ Înălțime automată */
-        margin-top: 70px;  /* ✅ Mai puțin spațiu sus-jos */
+        margin-top: 10px;
         margin-bottom: 0px;
         overflow: hidden;
     }

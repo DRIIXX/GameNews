@@ -71,7 +71,7 @@ body {
 
 /* ------ SECTIUNEA STIRI ------ */
 
-.stiri{
+.stiri-section{
     margin: 70px 20px 0px 20px;
     text-align: left;
     list-style-type: none;
@@ -112,6 +112,7 @@ body {
 .btn-vezi-toate {
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 5px;
     padding: 12px 24px;
     background: linear-gradient(to right, #ffcc00, #ffaa00);
     color: #000;
@@ -125,6 +126,44 @@ body {
 .btn-vezi-toate:hover {
     background: linear-gradient(to right, #ffaa00, #ffcc00);
     transform: scale(1.05);
+}
+
+/* ------ Sectiunea baguri ------*/
+.bugs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bugs-section {
+    width: 65%; /* Secțiunea cu bug-uri ocupă 65% din lățime */
+}
+
+.ad-space {
+    width: 30%; /* Spațiu pentru reclamă */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Poți ajusta înălțimea */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-bugs-section{
+    list-style-type: none;
+    margin: 0px 180px 0px 180px;
+    color: #ffed2d;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+
 }
 
 /* Media Query pentru mobil (max-width: 768px) */

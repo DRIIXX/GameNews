@@ -69,6 +69,54 @@ body {
     z-index: 1100;
 }
 
+/* ------ SECTIUNEA STIRI ------ */
+/* ✅ Stiluri pentru slider */
+.slider-section {
+    width: 100%;
+    max-width: 1400px;
+    height: 250px auto;
+    margin: 70px auto;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ✅ Facem ca slide-urile să fie vizibile pe ambele părți */
+.splide__track {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* buttonul pentru a vedea stirile */
+.stiri {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-vezi-toate {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ffcc00, #ffaa00);
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-vezi-toate:hover {
+    background: linear-gradient(to right, #ffaa00, #ffcc00);
+    transform: scale(1.05);
+}
+
 /* Media Query pentru mobil (max-width: 768px) */
 @media screen and (max-width: 768px) {
     /* Ascundem meniul inițial */
@@ -99,88 +147,25 @@ body {
         opacity: 1;
         visibility: visible;
     }
-    
-    /* splide pentru ecrane mici */
-    .splide {
-        margin-top: 80px;
+    /* splide pentru ecrane mici 
+    ✅ Stiluri pentru slider */
+    .slider-section {
+        width: 100%;
+        max-width: 100%;  /* ✅ Se va întinde cât e nevoie */
+        height: auto;  /* ✅ Înălțime automată */
+        margin-top: 70px;  /* ✅ Mai puțin spațiu sus-jos */
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .splide__slide img {
+        width: 100%;  /* ✅ Imaginile să se ajusteze la container */
+        height: auto;
+        object-fit: cover;  /* ✅ Asigură că nu se deformează */
     }
 
     .splide__track {
         padding-left: 5%;
         padding-right: 5%;
     }
-
-    .splide__slide {
-        transform: scale(0.8);
-    }
-
-    .splide__slide.is-active {
-        transform: scale(1);
-    }
-}
-
-/* ------ SECTIUNEA STIRI ------ */
-.stiri {
-    text-align: center;
-    padding: 20px;
-    background: #121212;
-    color: white;
-    margin-top: 80px;
-}
-
-/* ✅ Stiluri pentru slider */
-.slider-section { 
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-.splide__slide img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* ✅ Facem ca slide-urile să fie vizibile pe ambele părți */
-.splide__track {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.splide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.splide__slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.splide__slide.is-active {
-    transform: scale(1.1);
-}
-
-.slider-wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.splide__list {
-    display: flex;
-    align-items: center;
 }

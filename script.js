@@ -1,28 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     new Splide("#image-slider", {
-        type: "loop",
-        perPage: 3,
-        perMove: 1,
-        focus: "center",
-        gap: "0px",  // Mai mult spațiu între slide-uri
-        padding: '5rem',
-        width: "90%",
-        height: "400px",
-        autoplay: true,
-        interval: 3000,  // Face tranziția mai lentă
-        speed: 600,  // Animație mai lină
-        easing: 'ease',  // Efect mai natural
-        pauseOnHover: false,
-        arrows: true,
-        pagination: true,
-        breakpoints: {
-            768: {
-                perPage: 1,
-                width: "90%",
-                height: "300px",
-            },
-        }
+        type: "loop",      // 🔄 Slide-urile circulă la nesfârșit
+        perPage: 3,        // 📌 Arătăm 3 slide-uri în același timp
+        perMove: 1,        // 🔄 Mutăm doar 1 slide la fiecare click
+        gap: "10px",       // 📏 Spațiu între slide-uri
+        focus: "center",   // 🔥 Slide-ul din mijloc este mereu evidențiat
+        autoplay: true,    // ⏳ Slide-urile se mișcă automat
+        interval: 3000,    // ⏱️ Fiecare slide stă 3 secunde
+        speed: 1000,       // 🚀 Timp de tranziție între slide-uri
+        arrows: true,      // ⏪⏩ Butoane pentru navigare
+        pagination: true,  // 🔘 Paginare (bule jos)
     }).mount();
 
     // Selectăm butonul burger și meniul de navigare

@@ -157,9 +157,9 @@ body {
 
 .title-bugs-section{
     list-style-type: none;
-    color: #ffed2d;
+    color: white;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     align-items: center;
 }
@@ -203,6 +203,39 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+/* Sectiunea LifeHacks */
+.lifehacks-section {
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+}
+
+.lifehacks-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lifehack-card {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lifehack-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lifehack-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 /* Media Query pentru mobil (max-width: 768px) */

@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    fetch('Header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Eroare la încărcarea header-ului:', error));
+
     new Splide("#image-slider", {
         type: "loop",      // 🔄 Slide-urile circulă la nesfârșit
         perPage: 3,        // 📌 Arătăm 3 slide-uri în același timp
@@ -33,4 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("Eroare: Butonul burger sau meniul de navigare nu au fost găsite");
     }
+    // Footer-ul
+    fetch('Footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Eroare la încărcarea footer-ului:', error));
 });

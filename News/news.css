@@ -14,3 +14,51 @@ body {
     padding: 0;
 }
 
+.news-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+    padding: 70px 10px 10px 10px;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+    align-items: start;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000500;
+}
+
+.news-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-sidebar > div {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Pentru ecrane mici */
+@media (max-width: 768px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-sidebar {
+        order: -1;
+    }
+}
+
